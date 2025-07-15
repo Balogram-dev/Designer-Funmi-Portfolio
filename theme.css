@@ -1,0 +1,80 @@
+/* Theme Styles for Seunfunmi Portfolio Website */
+
+/* Light Theme Variables */
+.light-theme {
+    --bg-primary: #e8e7e9;
+    --bg-secondary: #F3E8FF;
+    --bg-gradient: linear-gradient(90deg, #F3E8FF, #fad9eb);
+    --text-primary: #000000;
+    --text-secondary: #1A1A1A;
+    --accent-primary: #6B46C1;
+    --accent-secondary: #805AD5;
+    --card-bg: #F8FAFC;
+    --border-color: linear-gradient(90deg, #7B2FFF, #FB19FF);
+    --card-bg: #FFFFFF;
+    --icon-color: #000;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Theme Variables (default) */
+.dark-theme {
+    --bg-primary: #121212;
+    --bg-secondary: #141414;
+    --bg-gradient: linear-gradient(90deg, #141414, #200112b0);
+    --text-primary: #ffffff;
+    --text-secondary: #a0aec0;
+    --accent-primary: #805ad5;
+    --accent-secondary: #9f7aea;
+    --card-bg: #020618;
+    --border-color: linear-gradient(90deg, #8268B0, #FB19FF);
+    --icon-color: #fff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+/* Theme Transition */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme Toggle Button Styles - moved to style.css */
+
+/* Light Theme Specific Adjustments */
+.light-theme .work-item,
+.light-theme .service-item,
+.light-theme .testimonial-item {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.light-theme .hero-circle img {
+    opacity: 0.8;
+}
+
+.light-theme .contact-option {
+    border: 1px solid var(--border-color);
+}
+
+.light-theme .nav-links a:hover {
+    color: var(--accent-primary);
+}
+
+.light-theme .cta-button:hover {
+    background-color: var(--accent-secondary);
+}
+
+.light-theme .process-indicator.active {
+    background-color: var(--accent-primary);
+}
+
+.light-theme .footer {
+    background-color: var(--bg-secondary);
+}
+
+.light-theme .theme-icon {
+    content: url('images/Toggle light.svg');
+}
+
+.dark-theme .theme-icon {
+    content: url('images/Toggle dark.svg');
+}

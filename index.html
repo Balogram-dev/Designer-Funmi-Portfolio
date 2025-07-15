@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEUNFUNMI - UI/UX Product Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a1894d7978.js" crossorigin="anonymous"></script>
+</head>
+<body class="dark-theme">
+    <div class="floating-contact">
+        <div class="contact-bubble">
+            <span>You have an idea?</span>
+            <a href="#contact">Contact me</a>
+            <button class="close-bubble"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <!-- Logo image -->
+                    <a href="#" class="nav-logo">
+                        <h3  class="seun-logo">SEUNFUNMI</h3>
+                    </a>
+                </div>
+                <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="resume-btn">
+                    <button>VIEW MY RESUME</button>
+                </div>
+                </div>
+                    <!-- Theme toggle button with light/dark icons
+                    <img src="images/Toggle dark.svg" alt="Toggle theme" id="theme-icon"> -->
+    <label class="theme-switch">
+        <input type="checkbox" class="theme-switch__checkbox" />
+    <div class="theme-switch__container">
+      <div class="theme-switch__clouds"></div>
+      <div class="theme-switch__stars-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path>
+        </svg>
+      </div>
+      <div class="theme-switch__circle-container">
+        <div class="theme-switch__sun-moon-container">
+          <div class="theme-switch__moon">
+            <div class="theme-switch__spot"></div>
+            <div class="theme-switch__spot"></div>
+            <div class="theme-switch__spot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="center-wrapper">
+                <div class="active-status">Hi, I am ACTIVE</div>
+              </div>
+            <div class="hero-content">
+                <h1>TURNING IDEAS INTO SEAMLESS <br>DIGITAL EXPERIENCES</h1>
+                <p>Hello, I'm Oluwaseunfunmi Adediran, a UI/UX designer specializing in product design, user experience, and design tutoring.
+                    
+                    <div id="circle-btn">
+                        <svg width="72" height="72" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="50" cy="50" r="45" />
+                        </svg>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-work" id="work">
+            <div class="container">
+                <div class="section-header">
+                    <h2>My Works</h2>
+                    <a href="#" class="see-all">SEE ALL <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="work-grid">
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="images/travlex full.png" alt="TRAVLEX - Traveling and flight booking app">
+                        </div>
+                        <div class="work-info">
+                            <h3>TRAVLEX</h3>
+                            <p>Traveling and flight booking app</p>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="images/landing page portfolio.png" alt="PORTFOLIO LANDING PAGE - An architecture portfolio landing page">
+                        </div>
+                        <div class="work-info">
+                            <h3>PORTFOLIO LANDING PAGE</h3>
+                            <p>An ARCHITECTURE PORTFOLIO LANDING PAGE</p>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="images/perfbee landing page.jpg" alt="PERFBEE LANDING PAGE - A perfume and fragrance landing page">
+                        </div>
+                        <div class="work-info">
+                            <h3>PERFBEE LANDING PAGE</h3>
+                            <p>A perfume and fragrance landing page</p>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="images/webwav.jpg" alt="WEBWAV - A web 3 mobile app">
+                        </div>
+                        <div class="work-info">
+                            <h3>WEBWAV</h3>
+                            <p>A web 3 mobile app</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="design-process" id="process">
+            <div class="container">
+                <div class="process-header">
+                    <span class="subtitle">My Design Process</span>
+                    <h2 class="title">The Oluwaseunfunmi Method</h2>
+                </div>
+                <div class="process-slider">
+                    <div class="process-slide active">
+                        <div class="step-number">1. Understand</div>
+                        <div class="step-content">
+                            <p class="step-description">
+                                I dive deep to uncover the <span class="highlight-pink">"why"</span> behind the project.
+                                Through stakeholder interviews, user research, and
+                                competitive analysis, I get to know the people I'm
+                                designing for — <span class="highlight-pink">their needs</span>, <span class="highlight-blue">behaviors</span>, and <span class="highlight-purple">pain points</span>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="prev-slide" aria-label="Previous slide">←</button>
+                        <button class="next-slide" aria-label="Next slide">→</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title">About me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="greeting">Hello there, <span class="wave">👋</span></p>
+                        <p class="introduction">I am Oluwaseunfunmi Adediran, a UI/UX, a passionate Product designer with over 2 years of experience in creating intutive and engaging user interfaces and user experiences. I am driven by a love for solving complex problems with elegant design solutions. Beyond designing, I share my knowledge and insights on <a href="#" class="social-link">Youtube</a> and <a href="#" class="social-link">Tiktok</a>, where I create engaging content to inspire and educate aspiring designers.</p>
+                        <div class="fun-fact">
+                            <h3>Fun fact about me</h3>
+                            <p>When I am not designing, you'll find me reading a book or watching anime. I am that one lady who loves to smile and be happy as much as she can. You will also find me experimenting new design trends.</p>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/Frame 8.jpg" alt="Oluwaseunfunmi Adediran">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <div class="services-header">
+                    <span class="subtitle">My Services</span>
+                    <h2 class="title">What I Do (And Do Really Well)</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Product Design (UI/UX)</h3>
+                        <p>I design intuitive, user-centered digital products—from mobile apps to complex dashboards. I focus on functionality, accessibility, and aesthetic balance to create interfaces users love.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>UX Research & Strategy</h3>
+                        <p>Design that's backed by data, not just vibes. I don't guess—I ask, test, observe, and learn. I dig deep into user behaviors and needs to craft informed design strategies that solve real problems.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>UX Writing</h3>
+                        <p>Words matter. I craft clear, consistent, and meaningful microcopy that guides users and enhances experience — from buttons and tooltips to onboarding flows and error messages. Every word earns its place.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Design Mentorship & Tutoring</h3>
+                        <p>I help aspiring designers level up through practical, hands-on learning. Whether it's 1-on-1 sessions, bootcamps, or workshops—I make design less scary and more exciting. From newbie to ninja, I've got you covered.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Design Systems</h3>
+                        <p>I build scalable, consistent design systems that keep your brand unified and your team efficient. Components, tokens, rules—you name it. Because chaos doesn't scale. Systems do.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Consultation & Design Advisory</h3>
+                        <p>Have an idea, a product, or a team that needs guidance? I offer design direction, feedback, and collaborative sessions to help you move forward with clarity. Sometimes, all you need is a fresh perspective.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="testimonials-header">
+                    <span class="subtitle">Testimonials</span>
+                    <h2 class="title">Real words from real humans I've worked with.</h2>
+                </div>
+                <div class="testimonials-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <h3 class="testimonial-quote">"Working with Oluwaseunfunmi was a game changer!"</h3>
+                            <p class="testimonial-text">She took our vision and brought it to life with such clarity and creativity. The final product not only looked stunning, but it also improved our user engagement significantly.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/avatar.jpg" alt="Client Avatar" class="author-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">Oluwaseunfunmi Adediran</h4>
+                                <p class="author-role">Product Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <h3 class="testimonial-quote">"Her attention to detail is unmatched!"</h3>
+                            <p class="testimonial-text">Working with Oluwaseunfunmi was an absolute pleasure. She has an incredible eye for design and truly understands how to create intuitive, user-friendly interfaces.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/avatar.jpg" alt="Client Avatar" class="author-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">Sarah Johnson</h4>
+                                <p class="author-role">UX Director</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <h3 class="testimonial-quote">"A true professional who delivers excellence!"</h3>
+                            <p class="testimonial-text">Oluwaseunfunmi's approach to design is both methodical and creative. She not only delivered an outstanding product but also educated our team on best practices throughout the process.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/avatar.jpg" alt="Client Avatar" class="author-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">Michael Chen</h4>
+                                <p class="author-role">Startup Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-nav">
+                    <button class="nav-button prev" aria-label="Previous testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="nav-button next" aria-label="Next testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    <section id="contact" class="cta">
+        <div class="container">
+            <h2>Ready to Turn Your Idea Into a Beautiful, Functional Reality?</h2>
+            <p>I design websites, mobile apps, and digital experiences that not only look great but actually work.</p>
+            <p>I teach and mentor aspiring designers, turning curiosity into confidence and skill.</p>
+            <p>And I partner with founders, teams, and creatives to bring ideas to life, from rough sketches to pixel-perfect prototypes.</p>
+            
+            <div class="cta-buttons">
+                <a href="#" class="cta-button primary-btn">Book a call</a>
+                <a href="mailto:seunadediran83@gmail.com" class="cta-button secondary-btn">Send an email</a>
+            </div>
+            
+            <div class="contact-info">
+                <h3>Contact me via:</h3>
+                <div class="contact-links">
+                    <a href="mailto:seunadediran83@gmail.com" class="contact-link email-link">
+                        <i class="far fa-envelope"></i> seunadediran83@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/oluwaseunfunmi-adediran" class="contact-link social-link">
+                        <i class="fab fa-linkedin"></i> Oluwaseunfunmi Adediran
+                    </a>
+                    <a href="https://www.behance.net/oluwaseunfunmi-adediran" class="contact-link social-link">
+                        <i class="fab fa-behance"></i> Oluwaseunfunmi Adediran
+                    </a>
+                    <a href="https://www.instagram.com/oluwaseunfunmi_adediran" class="contact-link social-link">
+                        <i class="fab fa-instagram"></i> oluwaseunfunmi_adediran
+                    </a>
+                    <a href="https://www.youtube.com/oluwaseunfunmi-adediran" class="contact-link social-link">
+                        <i class="fab fa-youtube"></i> Oluwaseunfunmi Adediran
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>SEUNFUNMI</h2>
+                    <p>OLUWASEUNFUNMI ADEDIRAN - PRODUCT DESIGNER</p>
+                </div>
+                <div class="back-to-top">
+                    <a href="#" class="top-button">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>(BACK TO TOP)</span>
+                    </a>
+                </div>
+                <div class="footer-credits">
+                    <p>Site designed by <span class="highlight">me</span>, developed by <span class="highlight">Temiloluwa Adediran</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>    
+</body>
+</html>

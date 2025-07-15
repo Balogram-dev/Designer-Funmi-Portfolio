@@ -1,0 +1,293 @@
+/* Responsive Styles for Seunfunmi Portfolio Website */
+
+/* Large Screens (Desktops) */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .works-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .about-image {
+        order: -1;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cta h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Small Screens (Mobile Landscape) */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    header {
+        padding: 1rem 0;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+    }
+    
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 1.5rem;
+    }
+    
+    .hero {
+        padding: 3rem 0 2rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-option {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+}
+
+/* Extra Small Screens (Mobile Portrait) */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    .logo img {
+        height: 30px;
+    }
+    
+    .contact-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-circle {
+        transform: scale(0.8) translate(-60%, -60%);
+    }
+    
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .work-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .work-card {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .work-image {
+        height: 300px;
+    }
+    
+    .work-image img {
+        height: 100%;
+    }
+    
+    .process-description {
+        font-size: 1rem;
+    }
+    
+    .skills ul {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta h2 {
+        font-size: 1.5rem;
+    }
+    
+    .footer-logo h2 {
+        font-size: 1.5rem;
+    }
+    
+    .footer-logo p {
+        font-size: 0.8rem;
+    }
+    
+    .footer-content {
+        gap: 1.5rem;
+    }
+    
+    .footer-credits p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Navigation Menu for Mobile */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-primary);
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--border-color);
+        z-index: 100;
+    }
+    
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    
+    .theme-toggle {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+}
+
+/* Fix for very small screens */
+@media screen and (max-width: 350px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .cta-button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .work-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .work-image {
+        height: 250px;
+    }
+    
+    .years {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* Contact/CTA Section Responsive Styles */
+@media (max-width: 768px) {
+    .cta h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .cta p {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+        width: 100%;
+        max-width: 300px;
+        margin: 1.5rem auto;
+    }
+    
+    .cta-button {
+        width: 100%;
+    }
+    
+    .contact-links {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta {
+        padding: 3rem 0;
+    }
+    
+    .cta h2 {
+        font-size: 1.8rem;
+    }
+    
+    .contact-link {
+        font-size: 0.9rem;
+    }
+}
