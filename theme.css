@@ -7,10 +7,10 @@
     --bg-gradient: linear-gradient(90deg, #F3E8FF, #fad9eb);
     --text-primary: #000000;
     --text-secondary: #1A1A1A;
-    --accent-primary: #6B46C1;
-    --accent-secondary: #805AD5;
+    --accent-primary: #821350;
+    --accent-secondary: #4246FF;
     --card-bg: #F8FAFC;
-    --border-color: linear-gradient(90deg, #7B2FFF, #FB19FF);
+    --border-color: linear-gradient(90deg, #4246FF, #821350);
     --card-bg: #FFFFFF;
     --icon-color: #000;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -26,7 +26,7 @@
     --accent-primary: #805ad5;
     --accent-secondary: #9f7aea;
     --card-bg: #020618;
-    --border-color: linear-gradient(90deg, #8268B0, #FB19FF);
+    --border-color: linear-gradient(90deg, #4246FF, #821350);
     --icon-color: #fff;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     background-color: var(--bg-primary);
