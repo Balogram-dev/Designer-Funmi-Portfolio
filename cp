@@ -1,2 +1,0 @@
---accent-primary: #F8FAFC;
---accent-primary: #020618;
