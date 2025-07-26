@@ -364,3 +364,16 @@ showSlide(currentSlide);
                 }
             }
         });
+
+
+        document.querySelectorAll('.copy-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const textToCopy = button.getAttribute('data-copy');
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        button.innerText = 'Copied!';
+        setTimeout(() => {
+          button.innerText = 'Copy';
+        }, 1500);
+      });
+    });
+  });
